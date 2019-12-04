@@ -59,6 +59,7 @@ html, body {
   display: none;
 }
 
-.selection-dropdown.active > [selector] {
-  display: none;
+.selection-dropdown {
+  margin: 10px;
+  width: 250px;
 }
