@@ -24,6 +24,7 @@ def create_app():
         context = {
             'sensor_data': data.to_dict(orient='list')
         }
+
         return flask.jsonify(context)
 
     return app

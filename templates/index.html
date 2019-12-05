@@ -4,7 +4,9 @@
 <div id="main-container" class="body-section">
   <div class="section">
     <h1>Corelation of any two sensor data</h1>
-    <select class="selection-dropdown section-container" id="seriesSelector"></select>
+    <div class="section-container">
+      <select class="selection-dropdown" id="seriesSelector"></select>
+    </div>
   </div>
 
   <div class="section">
@@ -13,16 +15,11 @@
       <div class="column">
         <div class="graphic-container">
           <h1>Skewness of sensor data</h1>
-          <div class="chart-container" id="corelationChartContainer"></div>
-        </div>
-
-        <div class="graphic-container">
-          <h1>Outliner detection</h1>
-          <div class="chart-container" id="outlinerDetectionChartContainer"></div>
+          <div class="chart-container" id="histogramPlotContainer"></div>
         </div>
       </div>
       <div class="graphic-container">
-        <h1>Mean, model, Median, Variance</h1>
+        <h1>Mean, model, Median of all sensor data</h1>
         <div class="table-container" id="tableContainer"></div>
       </div>
     </div>
@@ -31,14 +28,12 @@
   <div class="section">
     <h1>Corelation of any two sensor data</h1>
     <div class="section-container">
-      <select class="selection-dropdown" id="seriesSelector"></select>
+      <select class="selection-dropdown" id="anotherSeriesSelector"></select>
 
-      <div class="graphic-container mt-1" id="corelationChartContainer"></div>
+      <div class="chart-container mt-1" id="scatterPlotContainer"></div>
     </div>
   </div>
 
 </div>
-
-
 
 {% endblock %}

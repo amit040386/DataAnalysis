@@ -1,7 +1,10 @@
 html, body {
+  height: 100%;
   overflow: hidden;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-section {
@@ -60,6 +63,22 @@ html, body {
 }
 
 .selection-dropdown {
-  margin: 10px;
   width: 250px;
+}
+
+.chart-container {
+  flex: 1;
+  height: 400px;
+}
+
+.table-container table {
+  width: 100%;
+}
+
+.table-container table td {
+  padding: 5px;
+}
+
+.table-container table tr:first-child td {
+  font-weight: bold;
 }
