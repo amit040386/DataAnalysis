@@ -11,26 +11,6 @@ const Helper = (function() {
         return arr;
     };
 
-    const getScatterPlotData = (obj, series) => {
-        const classLabels = obj.class_label;
-        const seriesData = obj[series];
-        const positiveClassArr = [];
-        const negativeClassArr = [];
-
-        classLabels.forEach((val, index) => {
-            if (val === 1) {
-                positiveClassArr.push([]);
-            } else {
-                negativeClassArr.push([]);
-            }
-        });
-
-        return {
-            "positiveClasLabel": positiveClassArr,
-            "negativeClassLabel": negativeClassArr
-        }
-    };
-
     const getHistogramData = (obj, seriesName) => {
         return obj[seriesName];
     };
@@ -85,7 +65,6 @@ const Helper = (function() {
 
     return {
         getAllSensors,
-        getScatterPlotData,
         getHistogramData,
         getTabularData
     };
